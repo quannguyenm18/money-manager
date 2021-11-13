@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="@string/xin_chao"
+        android:textColor="@color/black"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/content_hello"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hello"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/content_xin_chao" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_dang_ky"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_dang_nhap"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_button"
+        android:text="Đăng Ký"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_dang_nhap"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/content_dang_ky"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_button_hind"
+        android:text="Đăng Nhập"
+        android:textColor="#32B768" />
+
+    <TextView
+        android:id="@+id/content_dang_ky"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="@string/content_dang_ky"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+</RelativeLayout>

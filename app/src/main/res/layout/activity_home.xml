@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:openDrawer="start"
+    android:id="@+id/myDrawer"
+    android:background="@color/color_background"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_home"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/color_background" >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_clickopendrawer"
+                    android:src="@drawable/btnopendrawer"
+                    android:layout_weight="0"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_titleToolbar"
+                    android:text="title"
+                    android:gravity="center"
+                    android:layout_weight="3"
+                    android:textColor="@color/greentext"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/myFrame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/myBottomNavi" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/myBottomNavi"
+                android:layout_width="match_parent"
+                app:menu="@menu/menu_bottom"
+                android:elevation="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                app:itemIconTint="@color/colors_bottom_navigation"
+                app:itemTextColor="@color/colors_bottom_navigation"
+                android:background="@drawable/bg_bottom"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/my_navi"
+        android:layout_gravity="start"
+        android:background="@color/color_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                 android:layout_marginTop="32dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="32dp"
+                android:padding="16dp"
+                android:elevation="4dp"
+                android:background="@drawable/backgroud_item_nav"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/iconuser"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_nguoidung"
+                    android:text="Tên Người Dùng"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:paddingLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/editname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            //item 2
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                android:elevation="4dp"
+                android:background="@drawable/backgroud_item_nav"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/icontuitien"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_contact"
+                    android:text="Liên Hệ Với Admin"
+                    android:layout_marginTop="2dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:paddingLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/chitiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            // item 3
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="16dp"
+                android:elevation="4dp"
+                android:background="@drawable/backgroud_item_nav"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/iconmeochitieu"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_meochitieu"
+                    android:text="Mẹo Chi Tiêu"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:paddingLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/chitiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+         // team 4
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                android:elevation="4dp"
+                android:background="@drawable/backgroud_item_nav"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/icophienbanmoi"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_update"
+                    android:text="Phiên Bản Mới"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:paddingLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/chitiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnLogout"
+                    android:layout_width="86dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/backgroud_logout"
+                    android:text="Logout"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

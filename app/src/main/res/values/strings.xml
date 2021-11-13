@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Money Manager</string>
+    <string name="hello">Money Love sẽ giúp bạn có thể quản lý được các vấn đề lien quan đến tài chính của bạn một cách dễ rang nhất</string>
+    <string name="xin_chao">Xin Chào</string>
+    <string name="content_xin_chao">Để Có Thể Giúp Bạn Quản Lý Chi Tiêu Hợp Lý Trước Tiên Bạn Cần Đăng Ký !!</string>
+    <string name="content_dang_ky">Bằng Cách Đăng Nhập Hoặc Đăng Ký, Bạn Đã Đồng Ý Với Các Điều Khoản Và Điều Kiện Và Chính Sách Bảo Mật.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

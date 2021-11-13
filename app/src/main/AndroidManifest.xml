@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moneymanager">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MoneyManager">
+        <activity
+            android:name=".ui.DetailKhoanChiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.DetailKhoanThuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.SucessNewPassActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.NewPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.SuccessForgetPassActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.ForgetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ManHinhChaoActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
